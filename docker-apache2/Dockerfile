@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 # Author: 
-MAINTAINER perry.tang <perry.tang@gmail.com>
+MAINTAINER perry.tang <perry.tzp@gmail.com>
 
 # Install apache2 package
 RUN apt-get update && \
