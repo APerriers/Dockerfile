@@ -1,6 +1,8 @@
 FROM golang
 MAINTAINER perry.tang <perry.tzp@gmail.com>
-WORKDIR /go/src/
+WORKDIR /go/src/app
 COPY . .
+# 对外端口
 EXPOSE 80
-CMD ["/bin/bash", "/go/src/script/build.sh"]
+# 运行项目
+ENTRYPOINT ["go","run","main.go"]
